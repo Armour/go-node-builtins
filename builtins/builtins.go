@@ -61,10 +61,10 @@ func GetVersion(version string) ([]string, error) {
 		coreModules []string
 	}{
 		{"1.0.0", []string{"v8"}},
-		{"1.1.3", []string{"process"}},
+		{"1.1.0", []string{"process"}},
 		{"8.1.0", []string{"async_hooks"}},
 		{"8.4.0", []string{"http2"}},
-		{"8.5.0", []string{"pref_hooks"}},
+		{"8.5.0", []string{"perf_hooks"}},
 	}
 
 	for _, n := range newModules {

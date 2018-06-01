@@ -24,11 +24,11 @@ func TestSpecificModule(t *testing.T) {
 		{"8.5.0", "perf_hooks", true},
 	}
 	for _, tc := range tests {
-		found := false
 		builtins, err := GetVersion(tc.version)
 		if err != nil {
 			t.Error(err)
 		}
+		found := false
 		for _, b := range builtins {
 			if b == tc.module {
 				found = true
