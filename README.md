@@ -15,11 +15,15 @@ go get github.com/Armour/go-node-builtins
 Get list of core modules for specific Node.js version:
 
 ```go
+package main
+
 import (
-   github.com/Armour/go-node-builtins/builtins
+	"github.com/Armour/go-node-builtins/builtins"
 )
 
-builtins := builtins.GetVersion("6.0.0")
+func main() {
+	b := builtins.GetVersion("6.0.0")
+}
 ```
 
 ## Contributing

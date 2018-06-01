@@ -25,7 +25,7 @@ func TestSpecificModule(t *testing.T) {
 	}
 	for _, tc := range tests {
 		found := false
-		builtins, err := getVersion(tc.version)
+		builtins, err := GetVersion(tc.version)
 		if err != nil {
 			t.Error(err)
 		}
@@ -49,7 +49,7 @@ func TestBuiltinsLength(t *testing.T) {
 		{"8.5.0", 37},
 	}
 	for _, tc := range tests {
-		builtins, err := getVersion(tc.version)
+		builtins, err := GetVersion(tc.version)
 		if err != nil {
 			t.Error(err)
 		}

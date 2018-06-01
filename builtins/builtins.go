@@ -6,7 +6,8 @@ import (
 	"github.com/Masterminds/semver"
 )
 
-func getVersion(version string) ([]string, error) {
+// GetVersion returns a list of coreModules for specific nodejs version.
+func GetVersion(version string) ([]string, error) {
 	v, err := semver.NewVersion(version)
 	if err != nil {
 		return nil, fmt.Errorf("Error parsing version: %s", err)
