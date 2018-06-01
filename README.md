@@ -4,6 +4,24 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Template from jarvis](https://img.shields.io/badge/Hi-Jarvis-ff69b4.svg)](https://github.com/Armour/Jarvis)
 
+## Install
+
+```bash
+go get github.com/Armour/go-node-builtins
+```
+
+## Example
+
+Get list of core modules for specific Node.js version:
+
+```go
+import (
+   github.com/Armour/go-node-builtins/builtins
+)
+
+builtins := builtins.GetVersion("6.0.0")
+```
+
 ## Contributing
 
 1. Fork it!
