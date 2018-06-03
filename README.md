@@ -10,7 +10,7 @@
 ## Install
 
 ```bash
-go get github.com/Armour/go-node-builtins
+go get github.com/Armour/go-node-builtins/cmd/builtins
 ```
 
 ## Example
