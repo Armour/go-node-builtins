@@ -1,3 +1,4 @@
+// Package builtins provides function to return nodejs coreModules list.
 package builtins
 
 import (

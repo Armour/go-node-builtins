@@ -1,3 +1,4 @@
+// Package builtins provides function to return nodejs coreModules list.
 package builtins
 
 import (
@@ -54,7 +55,7 @@ func TestBuiltinsLength(t *testing.T) {
 			t.Error(err)
 		}
 		if len(builtins) != tc.length {
-			t.Errorf("Builtins length check failed for versoin %s", tc.version)
+			t.Errorf("Builtins length check failed for version %s", tc.version)
 		}
 	}
 }
