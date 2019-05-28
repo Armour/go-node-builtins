@@ -3,19 +3,26 @@
 
 [[projects]]
   branch = "master"
+  digest = "1:a89670828254daf145e053bf4359ebd781ec48f83f5357cbc1196455ef66a58b"
   name = "github.com/Armour/go-node-builtins"
   packages = ["cmd/builtins"]
-  revision = "4a7225fd1b2b38c65075ed03e546da71afd3a402"
+  pruneopts = "UT"
+  revision = "af85b607f1603b815fb5ada394ce43c205368836"
 
 [[projects]]
+  digest = "1:55388fd080150b9a072912f97b1f5891eb0b50df43401f8b75fb4273d3fec9fc"
   name = "github.com/Masterminds/semver"
   packages = ["."]
+  pruneopts = "UT"
   revision = "c7af12943936e8c39859482e61f0574c2fd7fc75"
   version = "v1.4.2"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "9625dfa67c07b045e951ff3e3939d80d2b228cfe21b69027863b7a7f8f35e117"
+  input-imports = [
+    "github.com/Armour/go-node-builtins/cmd/builtins",
+    "github.com/Masterminds/semver",
+  ]
   solver-name = "gps-cdcl"
   solver-version = 1
